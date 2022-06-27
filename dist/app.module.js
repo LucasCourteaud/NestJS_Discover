@@ -10,7 +10,6 @@ exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
 const auth_module_1 = require("./auth/auth.module");
 const user_module_1 = require("./user/user.module");
-const bookmark_module_1 = require("./bookmark/bookmark.module");
 const prisma_module_1 = require("./prisma/prisma.module");
 const config_1 = require("@nestjs/config");
 let AppModule = class AppModule {
@@ -23,7 +22,6 @@ AppModule = __decorate([
             }),
             auth_module_1.AuthModule,
             user_module_1.UserModule,
-            bookmark_module_1.BookmarkModule,
             prisma_module_1.PrismaModule
         ],
     })
